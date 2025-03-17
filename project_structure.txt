@@ -1,0 +1,22 @@
+# 整個專案就像一個外幣交易圖書館
+forex_trading_library/
+├── core/                # 圖書館的「心臟」，負責所有基礎運作
+│   ├── database/        # 書架區 (存放所有歷史數據)
+│   │   ├── historical_data.py  # 歷史書架 (存放過去的外幣匯率紀錄)
+│   │   └── realtime_data.py    # 新書展示架 (存放最新的外幣匯率)
+│   │
+│   └── engine/          # 圖書館管理員
+│       ├── api_connector.py    # 管理員的電話 (用來取得最新匯率)
+│       └── trading_bot.py      # 自動借還書機器 (實際執行交易)
+│
+├── strategies/          # 借書指南手冊區
+│   ├── single_currency/        # 單一書籍借閱指南
+│   │   ├── simple_strategy.py  # 只看一本書決定借哪本
+│   │   └── advanced_strategy.py# 看多本書決定借一本
+│   │
+│   └── multi_currency/         # 多書籍借閱指南
+│       └── correlation_strategy.py  # 同時比較多本書決定借哪些
+│
+└── tests/               # 圖書館演習區
+    ├── single_trade_test.py    # 練習單次借書流程
+    └── multi_trade_test.py     # 練習同時借多本書 

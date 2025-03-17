@@ -1,0 +1,43 @@
+# AFTC 設定檔範例
+# 請複製此檔案為 config.ini 並修改內容
+
+[API]
+# API密鑰（可在外匯交易平台獲取）
+key = demo
+secret = demo
+
+[Settings]
+# 每多少秒更新一次匯率數據
+update_interval = 60
+
+# 每多少秒檢查一次交易機會
+check_interval = 300
+
+# 交易模式: paper(紙上交易) 或 live(真實交易)
+trade_mode = paper
+
+[Strategy]
+# 策略名稱: simple(簡單策略) 或 correlation(相關性策略)
+name = simple
+
+# 交易貨幣對
+currency = USD/JPY
+
+# 價格變動閾值（百分比）
+threshold = 0.5
+
+# 僅相關性策略使用 - 輔助貨幣對，用逗號分隔
+# secondary_currencies = EUR/USD,GBP/USD
+
+# 僅相關性策略使用 - 相關性窗口（天數）
+# correlation_window = 30
+
+# 每次交易金額
+trade_amount = 1000
+
+[Logging]
+# 日誌等級: DEBUG, INFO, WARNING, ERROR, CRITICAL
+level = INFO
+
+# 日誌文件存放路徑
+file = trading.log 

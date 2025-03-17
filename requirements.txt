@@ -1,0 +1,21 @@
+# 基本工具
+numpy==1.24.3
+pandas==2.0.3
+matplotlib==3.7.2
+
+# 資料處理
+scikit-learn==1.3.0
+
+# API 請求
+requests==2.31.0
+
+# 日誌和格式化
+logging==0.4.9.6
+python-dateutil==2.8.2
+
+# 測試
+pytest==7.4.0
+
+# 可選: 交易API相關庫
+# ccxt==3.1.54      # 加密貨幣交易所API
+# ta-lib==0.4.26   # 技術分析函式庫 (依據需求安裝) 
